@@ -37,6 +37,12 @@ get_sg_paths(filepath: string)
 get_images(filepath: string)
 - Returns all the images from a provided directory. This does not crawl subfolders.
 
+get_models(filepath: string)
+- Return all model filepaths in a given directory
+
+# slerror.py 
+
+
 
 
 ## threeJS initialization

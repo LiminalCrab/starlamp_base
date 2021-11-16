@@ -1,23 +1,38 @@
 import os
 from django.conf import settings
-from django.shortcuts import render
-import itertools
+
 path = settings.MEDIA_ROOT
 
-# Create your tests here.
-def get_sg_path(fp=""):
-    """ Returns the filepaths and names of all subgalleries"""
 
-    galfp = path + fp
+def get_images(fp=""):
+    """ Returns all images within a given directory, does not crawl subdirectories."""
 
-    # unformatted subgallery path
-    base_sg = [sdir for sdir in os.listdir(galfp) if os.path.isdir(os.path.join(galfp, sdir))]
+    exts = ["jpg", "jpeg", "png", "gif"]
 
-    if len(base_sg) < 0:
-        print(f"Either there is no subdirectory inside /media or /media is not established.")
-    else:
-        print(f"${base_sg} discovered.")
+    try:
 
+        # concat root and given filepath
+        galfp = os.path.join(path, fp)
 
+        # image names in directory to list
+        prim_gallery = [img for img in os.listdir(galfp) if os.path.isfile(os.path.join(galfp, img)) if img.split(".")[-1] in exts]
 
-get_sg_path("/models")
+        if prim_gallery is None:
+            raise FileNotFoundError(f"Unable to locate files.")
+
+        # unformatted and formatted list declerations
+        uffp_prim = []
+        fmfp_prim = []
+
+        # append media_root to given images
+        for imgs in prim_gallery:
+            uffp_prim.append(os.path.join(galfp, imgs))
+
+        for splits in uffp_prim:
+            fmfp_prim.append(splits[:1])
+            print(fmfp_prim)
+
+    finally:
+        print(fmfp_prim)
+
+get_images("models")
