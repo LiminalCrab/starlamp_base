@@ -16,7 +16,8 @@ def get_sg_path(fp=""):
     if len(base_sg) < 0:
         print(f"Either there is no subdirectory inside /media or /media is not established.")
     else:
-        print(f"${base_sg}")
+        print(f"${base_sg} discovered.")
+
 
 
 get_sg_path("/models")
