@@ -23,8 +23,7 @@ def get_sg_path(fp=""):
     for sdirs in base_sg:
         uf_sg.append(os.path.join(galfp, sdirs))
 
-
-    # this is bad code, fix the hardcoded value later.
+    # strip the first 4 folders from the filepath
     for splits in uf_sg:
         fm_sg.append("/".join(splits.strip("/").split('/')[4:]))
 
