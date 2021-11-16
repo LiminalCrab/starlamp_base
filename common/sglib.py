@@ -5,7 +5,7 @@ path = settings.MEDIA_ROOT
 
 
 def get_sg_path(fp=""):
-    """ Returns a relative filepath of all subgalleries within the a given folder in /media"""
+    """ Returns a list of filepaths of all subgalleries within the a given folder in /media"""
 
     galfp = os.path.join(path, fp)
 
@@ -29,7 +29,7 @@ def get_sg_path(fp=""):
 
 
 def get_images(fp=""):
-    """ Returns all images within a given directory, does not crawl subdirectories."""
+    """ Returns a list of image filepaths within a given directory, does not crawl subdirectories."""
 
     exts = ["jpg", "jpeg", "png", "gif"]
 
