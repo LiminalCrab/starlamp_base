@@ -28,9 +28,9 @@ def get_images(fp=""):
         for imgs in prim_gallery:
             uffp_prim.append(os.path.join(galfp, imgs))
 
+        # strip the first 4 folders from the filepath
         for splits in uffp_prim:
-            fmfp_prim.append(splits[:1])
-            print(fmfp_prim)
+            fmfp_prim.append("/".join(splits.strip("/").split('/')[4:]))
 
     finally:
         print(fmfp_prim)

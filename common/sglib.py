@@ -26,7 +26,7 @@ def get_sg_path(fp=""):
 
     # this is bad code, fix the hardcoded value later.
     for splits in uf_sg:
-        fm_sg.append(splits[36:])
+        fm_sg.append("/".join(splits.strip("/").split('/')[4:]))
 
 
     return fm_sg
