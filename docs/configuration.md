@@ -34,7 +34,6 @@ DATABASES = {
 TIME_ZONE = 'EST'
 
 
-### Starlamp_base
 
 ### gallery (app)
 Handles the images output to the website
