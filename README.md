@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 # Starlamp
+Note: Do not post sensitive information in this repository, it's actively shared with a public repo which will be disconnected further down the line.
 
 # TODO
 - [ ] galleries
@@ -26,6 +26,9 @@
 - [ ] common 
   - [ ] sglib.py 
 
+
+# Notes
+The models subdirectory of media refers to source engine .mdl files.
 
 # sglib.py
 get_sg_paths(filepath: string)
@@ -85,4 +88,3 @@ This information here is only to give me an idea of what I'm dealing with, it's 
 
 
 Anyway, a ton of shit is capable with this, can't wait to really dive in.
->>>>>>> b1b7cff (Updated configratuion file in /docs and README)

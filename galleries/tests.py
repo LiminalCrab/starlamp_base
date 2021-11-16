@@ -14,9 +14,9 @@ def get_sg_path(fp=""):
     base_sg = [sdir for sdir in os.listdir(galfp) if os.path.isdir(os.path.join(galfp, sdir))]
 
     if len(base_sg) < 0:
-        print(f"Please ensure the folder pointed to by MEDIA_ROOT is established")
+        print(f"Either there is no subdirectory inside /media or /media is not established.")
     else:
         print(f"${base_sg}")
 
 
-get_sg_path("/media")
+get_sg_path("/models")
