@@ -17,8 +17,8 @@ class Subgallery(models.Model):
 
 class Images(models.Model):
     name = models.CharField(max_length=64)
-    gallery = models.ForeignKey(Gallery, on_delete=models.CASCADE)
-    subgallery = models.ForeignKey(Subgallery, on_delete=models.CASCADE)
+    gallery = models.ForeignKey(Gallery, on_delete=models.SET_NULL)
+    subgallery = models.ForeignKey(Subgallery, on_delete=models.SET_NULL)
     filepath = models.CharField(max_length=248)
     upload_date = models.DateField()
 
