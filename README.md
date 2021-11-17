@@ -52,7 +52,7 @@ get_sg_paths(filepath: string)
  - Returns a list of filepaths for all subgalleries in a given gallery.
 
 get_files(extensions, filepath: string)
-- returns a list of filepaths of a given filetype. It can be a list of types or a single type.
+- returns a list of filepaths of one or more extensions. It can be a single extension or multiple different extensions.
 
 get_thumbs()
 - returns a list of thumbnails, the first file from every gallery discovered will be the thumbnail.
