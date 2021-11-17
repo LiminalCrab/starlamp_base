@@ -29,6 +29,8 @@ def get_sg_path(fp=""):
 
 
 def get_files(extensions, fp=""):
+    """Returns specified filetype from a given directiory.
+    Can take a single extension .jpg or a list [".jpg", ".mdl"]."""
 
     exts = []
 
