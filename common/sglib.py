@@ -114,3 +114,4 @@ def get_thumbs():
         formatted_image_filepath.append("/".join(paths.strip("/").split('/')[4:]))
 
     return formatted_image_filepath
+
