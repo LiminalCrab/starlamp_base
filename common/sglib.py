@@ -27,6 +27,7 @@ def get_sg_path(fp=""):
 
     return fm_sg
 
+
 def get_files(extensions, fp=""):
 
     exts = []
