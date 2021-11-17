@@ -53,5 +53,6 @@ def get_thumbs():
     for paths in unformatted_image_filepath:
         formatted_image_filepath.append("/".join(paths.strip("/").split('/')[4:]))
 
+    return formatted_image_filepath
 
 get_thumbs()
