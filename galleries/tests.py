@@ -34,7 +34,7 @@ def get_files(extensions, fp=""):
     for splits in uffp_prim:
         fmfp_prim.append("/".join(splits.strip("/").split('/')[4:]))
 
-    print(fmfp_prim)
+    return fmfp_prim
 
 
 get_files(["mdl", "jpg"], "models")
