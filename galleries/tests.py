@@ -16,7 +16,8 @@ def get_thumbs():
 
     unformatted_exclusion_list = []
 
-    unformatted_image_files = []
+    unformatted_image_filepath = []
+    formatted_image_filepath = []
 
     for gdirs in gallery_folder_scan:
         if gdirs.is_dir():
@@ -45,9 +46,12 @@ def get_thumbs():
             if items in subdirectories:
                 subdirectories.remove(items)
         for file in sorted(files):
-            unformatted_image_files.append(os.path.join(root, file))
+            unformatted_image_filepath.append(os.path.join(root, file))
             break
 
-    
+    # format the path properly.
+    for paths in unformatted_image_filepath:
+        formatted_image_filepath.append("/".join(paths.strip("/").split('/')[4:]))
+
 
 get_thumbs()
