@@ -36,13 +36,14 @@ ONE image or 3D asset in each gallery to serve as a thumbnail. Files are sorted 
 specific picture to serve as a thumbnail, name it something like 01AA_HelloWorld.jpg or 01AA_Face.mdl
 
 The top-level folders within the media folder are the galleries. Folders within those folders are subgalleries.
-
+``` 
 /media
 -gallery-1
     -subgallery-1
     -subgallery-2
 -gallery-2
     -subgallery-1
+```
 
 The models subdirectory of media refers to source engine .mdl files.
 
