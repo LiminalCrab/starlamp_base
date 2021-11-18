@@ -12,15 +12,13 @@ T
       - [ ] /assets
     - [ ] Lightbox applied to images and webgl rendered assets.
     - [ ] views.py
-      - [ ] index is mandatory.
+      - [X] index is mandatory.
       - [ ] authored pages based on directories established in "root/media"
     - [ ] collect static assets prior to full deployment.
 - [ ] accounts
   - [ ] account creation and handling (extremely basic but secure.)
-- [ ] templates
-  - [ ] base template for displaying global content.
-  [ ] starlamp
-    - [ ] urls - this will become obsolute so wtv
+- [X] templates
+  - [X] base template for displaying global content.
 - [ ] postgres
   - [X] migrated relations to container
 - [ ] common 

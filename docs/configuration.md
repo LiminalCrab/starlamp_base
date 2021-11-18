@@ -40,6 +40,10 @@ python manage.py createsuperuser fill in the request information
 
 You can now login to the admin panel.
 
+# static files 
+In settings.py starlamp's default directory is set to the project root. This can be changed, or even appended.
+
+
 ### gallery (app)
 Handles the images output to the website
 

@@ -4,7 +4,7 @@
 <h1>Galleries</h1>
 <ul>
     {% for gallery in galleries %}
-        <li>Gallery: {{ gallery.name }} | subgalleries {{ gallery.children }}</li>
+        <li><b>Gallery:</b> {{ gallery.name }} | <b>subgalleries</b> {{ gallery.children }}</li>
     {% endfor %}
 </ul>
 {% endblock %}
