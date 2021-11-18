@@ -20,6 +20,7 @@ T
     - [ ] collect static assets prior to full deployment.
 - [ ] accounts
   - [ ] account creation and handling (extremely basic but secure.)
+    - [ ] Single sign on via forum account? Steam auth token? ????
 - [X] templates
   - [X] base template for displaying global content.
 - [ ] postgres
