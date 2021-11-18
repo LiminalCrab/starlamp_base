@@ -1,26 +1,28 @@
 # Starlamp
 Note: Do not post sensitive information in this repository, it's actively shared with a public repo which will be disconnected further down the line.
-
+T
 # TODO
 - [ ] galleries
   - [ ] webgl render 3d models in folder to page.
     - [ ] three.js
-  - [ ] static content configuration 
-    - [ ] static folder designation "static"
-      - [ ] /css
-      - [ ] /js
-      - [ ] /assets
+    - [ ] NPM project files.
+      - [ ] Shell file for project initalization & deployment.
+        - [ ] Need to make sure all dependencies are installed properly.
+  - [X] static content configuration 
+    - [X] static folder designation "static"
+      - [X] /css
+      - [X] /js
+      - [X] /assets
     - [ ] Lightbox applied to images and webgl rendered assets.
     - [ ] views.py
-      - [ ] index is mandatory.
+      - [X] index is mandatory.
       - [ ] authored pages based on directories established in "root/media"
     - [ ] collect static assets prior to full deployment.
 - [ ] accounts
   - [ ] account creation and handling (extremely basic but secure.)
-- [ ] templates
-  - [ ] base template for displaying global content.
-  [ ] starlamp
-    - [ ] urls - this will become obsolute so wtv
+    - [ ] Single sign on via forum account? Steam auth token? ????
+- [X] templates
+  - [X] base template for displaying global content.
 - [ ] postgres
   - [X] migrated relations to container
 - [ ] common 

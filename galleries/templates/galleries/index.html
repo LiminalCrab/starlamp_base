@@ -1,0 +1,14 @@
+{% extends "galleries/base.html" %}
+{% load static %}
+
+{% block body %}
+    <main>
+        <h1>Galleries</h1>
+        <ul>
+            {% for gallery in galleries %}
+                <li><b>Gallery:</b> {{ gallery.name }} | <b>subgalleries</b> {{ gallery.children }}</li>
+                <script src="{% static 'galleries/js/three.js' %}"
+            {% endfor %}
+        </ul>
+    </main>
+{% endblock %}

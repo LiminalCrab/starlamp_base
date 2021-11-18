@@ -19,6 +19,7 @@ processes the requested material and forwards it back to Nginx. Nginx then prese
 # Database Connection
 in starlamp_base/settings.py
 
+Modify the database connection, it can be anything from MySQL, MariaDB, to Postgres. So long as you migrate the changes.
 ```python
 DATABASES = {
     'default': {
@@ -33,6 +34,14 @@ DATABASES = {
 ```
 TIME_ZONE = 'EST'
 
+# superuser
+If a superuser is needed run the command
+python manage.py createsuperuser fill in the request information
+
+You can now login to the admin panel.
+
+# static files 
+In settings.py starlamp's default directory is set to the project root. This can be changed, or even appended.
 
 
 ### gallery (app)
