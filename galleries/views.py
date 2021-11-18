@@ -3,7 +3,8 @@ from .models import Gallery
 from .models import Subgallery
 from .models import Images
 
-# Create your views here.
+
+# The index only displays the galleries themselves. Subgalleries are displayed within galleries.
 
 
 def index(req):

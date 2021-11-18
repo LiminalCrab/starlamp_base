@@ -53,10 +53,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'starlamp_base.urls'
 
+TEMPLATE_DIR = (os.path.join(BASE_DIR, 'templates'))
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [TEMPLATE_DIR]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
