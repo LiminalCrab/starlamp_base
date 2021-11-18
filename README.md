@@ -5,11 +5,14 @@ T
 - [ ] galleries
   - [ ] webgl render 3d models in folder to page.
     - [ ] three.js
-  - [ ] static content configuration 
-    - [ ] static folder designation "static"
-      - [ ] /css
-      - [ ] /js
-      - [ ] /assets
+    - [ ] NPM project files.
+      - [ ] Shell file for project initalization & deployment.
+        - [ ] Need to make sure all dependencies are installed properly.
+  - [X] static content configuration 
+    - [X] static folder designation "static"
+      - [X] /css
+      - [X] /js
+      - [X] /assets
     - [ ] Lightbox applied to images and webgl rendered assets.
     - [ ] views.py
       - [X] index is mandatory.
