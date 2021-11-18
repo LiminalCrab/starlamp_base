@@ -1,10 +1,10 @@
-{$ extends "galleries/base.html" $}
+{% extends "galleries/base.html" %}
 
-{$ block body $}
+{% block body %}
 <h1>Galleries</h1>
 <ul>
-    {$ for gallery in galleries $}
+    {% for gallery in galleries %}
         <li>Gallery: {{ gallery.name }} | subgalleries {{ gallery.children }}</li>
-    {$ endfor $}
+    {% endfor %}
 </ul>
-{$ endblock $}
+{% endblock %}
