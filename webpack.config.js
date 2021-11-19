@@ -5,6 +5,7 @@ const exclusions = /node_modules/;
 
 module.exports = [
   {
+    mode: "development",
     entry: {
       app: "./assets/app.js",
     },
