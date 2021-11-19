@@ -16,7 +16,9 @@ module.exports = [
     },
     devServer: {
       port: 8081,
-      writeToDisk: true,
+      devMiddleware: {
+        writeToDisk: true,
+      }
     },
     module: {
       rules: [
