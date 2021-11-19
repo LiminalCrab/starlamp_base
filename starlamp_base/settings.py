@@ -138,8 +138,6 @@ STATICFILES_FINDERS = [
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "node_modules"),
-    os.path.join(BASE_DIR, "node_modules", "three"),
-    os.path.join(BASE_DIR, "node_modules", "three", "examples")
 ]
 
 # USER DEFINED
