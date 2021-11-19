@@ -101,7 +101,7 @@ This information here is only to give me an idea of what I'm dealing with, it's 
      - Params: **name**, **times**, **values**, **interpoloation**
      - Properties: **name**, (tracks name can refer to morph targets or bones, possibly other values.)
      - Methods: .clone() (returns a copy of this track), .createInterpolant(),  .optimize() (removes equivalent sequential keys
-     - Static Methods: .toJSON (self explanatory, fucking lit)
+     - Static Methods: .toJSON (self explanatory)
 
 [Audio]
 - Can create a non-positional global audio object for the scene, not that we'll need this.
@@ -110,8 +110,8 @@ This information here is only to give me an idea of what I'm dealing with, it's 
 - Render a scene with a predefined set of cameras.
 
 [AmbientLight](https://threejs.org/docs/#api/en/lights/AmbientLight)
-- Scene lighting and shit, illuminates all objects in the scene equally. Kinda gross but needed.
+- Scene lighting, illuminates all objects in the scene equally. Kinda gross but needed.
 - Can set the color and intensity, but this is pretty base evel. There's various other light sources and shadow control to take advantage of.
 
 
-Anyway, a ton of shit is capable with this, can't wait to really dive in.
+Anyway, a ton of other stuff is capable with this, can't wait to really dive in.

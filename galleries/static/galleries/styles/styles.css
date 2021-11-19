@@ -1,2 +1,7 @@
 /* Until I see how Three.js handles css this is temporary. It might NOT be depending on what they provide. */
 
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

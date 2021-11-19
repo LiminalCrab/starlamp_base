@@ -118,3 +118,4 @@ GitHub.sublime-settings
 docs/*
 docs
 
+/node_modules/

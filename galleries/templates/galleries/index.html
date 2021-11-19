@@ -7,8 +7,9 @@
         <ul>
             {% for gallery in galleries %}
                 <li><b>Gallery:</b> {{ gallery.name }} | <b>subgalleries</b> {{ gallery.children }}</li>
-                <script src="{% static 'galleries/js/three.js' %}"
             {% endfor %}
         </ul>
+    <canvas id="bg"></canvas>
+    <script type="module" src="{% static 'galleries/js/sl3d.js' %}"></script>
     </main>
 {% endblock %}
