@@ -1,0 +1,30 @@
+{
+  "name": "starlamp_base",
+  "version": "1.0.0",
+  "description": "Note: Do not post sensitive information in this repository, it's actively shared with a public repo which will be disconnected further down the line. T # TODO - [ ] galleries   - [ ] webgl render 3d models in folder to page.     - [ ] three.js     - [ ] NPM project files.       - [ ] Shell file for project initalization & deployment.         - [ ] Need to make sure all dependencies are installed properly.   - [ ] Webpack   - [X] static content configuration      - [X] static folder designation \"static\"       - [X] /css       - [X] /js       - [X] /assets     - [ ] Lightbox applied to images and webgl rendered assets.     - [ ] views.py       - [X] index is mandatory.       - [ ] authored pages based on directories established in \"root/media\"     - [ ] collect static assets prior to full deployment. - [ ] accounts   - [ ] account creation and handling (extremely basic but secure.)     - [ ] Single sign on via forum account? Steam auth token? ???? - [X] templates   - [X] base template for displaying global content. - [ ] postgres   - [X] migrated relations to container - [ ] common    - [ ] sglib.py     - [X] get_files()     - [-] get_thumbs()     - [X] get_sg_path()",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TacoNBanana/donation-panel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TacoNBanana/donation-panel/issues"
+  },
+  "homepage": "https://github.com/TacoNBanana/donation-panel#readme",
+  "devDependencies": {
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "three": "^0.134.0"
+  }
+}
