@@ -119,3 +119,4 @@ docs/*
 docs
 
 /node_modules/
+/galleries/node_modules/
