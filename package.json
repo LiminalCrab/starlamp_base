@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/TacoNBanana/donation-panel#readme",
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
     "@webpack-cli/generators": "^2.4.1",
     "clean-webpack-plugin": "^4.0.0",
     "mini-css-extract-plugin": "^2.4.5",
