@@ -44,6 +44,11 @@ module.exports = [
                         {loader: "css-loader"},
                     ],
                 },
+                {
+                    test: /\.js$/,
+                    include: path.resolve(__dirname, '/assets'),
+                    loader: "babel-loader"
+                }
             ],
         },
         plugins: [
