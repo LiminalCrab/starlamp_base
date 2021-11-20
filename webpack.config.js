@@ -1,6 +1,8 @@
 const path = require("path");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+
 const exclusions = /node_modules/;
 
 module.exports = [
@@ -47,6 +49,7 @@ module.exports = [
         plugins: [
             new CleanWebpackPlugin({cleanStaleWebpackAssets: false}),
             new MiniCssExtractPlugin(),
+            new HTMLWebpackPlugin(),
         ],
     },
 ];
