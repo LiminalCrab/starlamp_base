@@ -1,15 +1,25 @@
 {% extends "galleries/base.html" %}
 {% load static %}
 
-{% block body %}
-    <main>
-        <h1>Galleries</h1>
-        <ul>
-            {% for gallery in galleries %}
-                <li><b>Gallery:</b> {{ gallery.name }} | <b>subgalleries</b> {{ gallery.children }}</li>
-            {% endfor %}
-        </ul>
-    </main>
-    <canvas id="bg"></canvas>
-    <script type="module" src="{% static 'galleries/js/main.js' %}"></script>
+{% block html %}
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {% block css %}
+            {{ block.super }}
+        {% endblock %}
+        <title>Document</title>
+    </head>
+    <body>
+    {% block content %}{% endblock %}
+
+    {% block js %}
+        {{ block.super }}
+    {% endblock %}
+    </body>
+    </html>
 {% endblock %}

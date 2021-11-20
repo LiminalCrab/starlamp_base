@@ -1,11 +1,11 @@
 {% block html %}
 
   {% block css %}
-    <script defer src="/static/app.js"></script><link href="/static/app.css" rel="stylesheet">
+    <%= htmlWebpackPlugin.tags.headTags %>
   {% endblock %}
 
   {% block js %}
-    
+    <%= htmlWebpackPlugin.tags.bodyTags %>
   {% endblock %}
 
 {% endblock %}
