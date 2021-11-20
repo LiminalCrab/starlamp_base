@@ -50,7 +50,7 @@ new MiniCssExtractPlugin({filename: 'css/app.css',}) in the plugins tell Webpack
 
 #### html-webpack-plugin 
 Simplifies creation of HTML files to serve webpack bundles.
-Useful for when we have hashes in our filename which changes every compilation.
+Useful for when we have hashes in our filename which changes everytime the file compiles.
 
 #### babel-loader
 https://webpack.js.org/loaders/babel-loader/
@@ -59,12 +59,7 @@ https://webpack.js.org/loaders/babel-loader/
 this plugin will remove all files inside webpack's output.path directory, as well as all unused webpack assets after 
 every successful rebuild.
 
-dangerouslyAllowCleanPatternsOutsideProject is set to true, this allows cleaning patterns to run in the project directory.
-
-
-
-
-
+`dangerouslyAllowCleanPatternsOutsideProject` is set to true, this allows cleaning patterns to run in the project directory.
 
 
 

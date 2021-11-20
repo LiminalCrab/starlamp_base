@@ -1,17 +1,11 @@
-{% load static %}
+{% block html %}
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FolderName</title>
-    <link  rel="stylesheet" href="{% static 'galleries/styles/styles.css' %}">
-</head>
-<body>
-{% block body %}
+  {% block css %}
+    <script defer src="/static/app.js"></script><link href="/static/app.css" rel="stylesheet">
+  {% endblock %}
+
+  {% block js %}
+    
+  {% endblock %}
+
 {% endblock %}
-</body>
-</html>

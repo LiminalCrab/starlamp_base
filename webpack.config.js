@@ -19,7 +19,7 @@ module.exports = [
         },
         devServer: {
             port: 8081,
-            watchFiles: ['assets/**/*', 'galleries/static/**'],
+            watchFiles: ['assets/**/*', 'galleries/**/**'],
             devMiddleware: {
                 writeToDisk: true,
             }
@@ -55,8 +55,8 @@ module.exports = [
             new CleanWebpackPlugin({dangerouslyAllowCleanPatternsOutsideProject: true, dry: false}),
             new MiniCssExtractPlugin(),
             new HTMLWebpackPlugin({
-                template: path.resolve(__dirname, './assets/index.html'),
-                filename: path.resolve(__dirname, './templates/base.html'),
+                template: path.resolve(__dirname, './assets/index.ejs'),
+                filename: path.resolve(__dirname, './galleries/templates/galleries/base.html'),
                 inject: false,
             }),
         ],
