@@ -55,7 +55,9 @@ module.exports = [
             new CleanWebpackPlugin({cleanStaleWebpackAssets: false}),
             new MiniCssExtractPlugin(),
             new HTMLWebpackPlugin({
-                template: path.resolve(__dirname, '../assets/index.html'),
+                template: path.resolve(__dirname, './assets/index.html'),
+                filename: path.resolve(__dirname, './templates/base.html'),
+                inject: false,
             }),
         ],
     },
