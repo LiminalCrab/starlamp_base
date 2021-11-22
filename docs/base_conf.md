@@ -1,5 +1,14 @@
 # API
 
+## Dev Server
+
+`sudo systemctl start docker`
+
+`docker start faca716c2d2b808cd1df6719c07c1e29e6ba856130495713ddb1cea03f2a166f`
+
+`npm run start`
+
+`python manage.py runserver`
 ## Stucture
 Nginx <--> Guinicorn <--> Django <--> Postgresql
 Nginx <---> Django <--- Webpack
@@ -54,8 +63,6 @@ path of the cached copy.
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 
-
-
 # superuser
 If a superuser is needed run the command
 python manage.py createsuperuser fill in the request information
@@ -70,7 +77,6 @@ Webpack is a static module bundler, it internally builds a
 dependency graph from one or more entry points and then combines 
 every module the project needs into one or more bundles, which are static
 assets to serve content from.
-
 
 ### gallery (app)
 Handles the images output to the website

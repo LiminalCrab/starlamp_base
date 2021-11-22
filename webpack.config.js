@@ -14,7 +14,7 @@ module.exports = [
         output: {
             path: path.resolve(__dirname, "galleries/static"),
             publicPath: "/static/",
-            filename: "[name].js",
+            filename: "js/[name].js",
             chunkFilename: "[id]-[chunkhash].js",
         },
         devServer: {
@@ -48,6 +48,10 @@ module.exports = [
                     test: /\.js$/,
                     include: path.resolve(__dirname, '/assets'),
                     loader: "babel-loader"
+                },
+                {
+                    test: /three\/examples\/js/,
+                    use: 'imports-loader?THREE=three'
                 }
             ],
         },
