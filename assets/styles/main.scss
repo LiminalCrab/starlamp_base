@@ -1,4 +1,7 @@
-$primary: teal;
+$primary-text-color: #fff;
+$secondary-text-color: #8e8e8e;
+$primary-background: #343a40;
+$secondary-background: #131515;
 
 * {
     box-sizing: border-box;
@@ -7,11 +10,21 @@ $primary: teal;
 }
 
 body {
-    background-color: $primary;
+    background-color: $primary-background;
 }
 
 .no-bullets {
     list-style: none;
+}
+
+.box {
+    background-color: $secondary-background;
+    width: 500px;
+    height: 500px;
+}
+
+.box p{
+    color: $secondary-text-color;
 }
 
 
