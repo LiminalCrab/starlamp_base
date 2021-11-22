@@ -1,7 +1,18 @@
 # API
 
+## Dev Server
+
+`sudo systemctl start docker`
+
+`docker start faca716c2d2b808cd1df6719c07c1e29e6ba856130495713ddb1cea03f2a166f`
+
+`npm run start`
+
+`python manage.py runserver`
 ## Stucture
-Nginx --> Guinicorn --> Django --> Postgresql
+Nginx <--> Guinicorn <--> Django <--> Postgresql
+Nginx <---> Django <--- Webpack
+
 
 Starlamp (the app) communicates to Nginx (the web server) through guinicorn (Webserver Gateway Interface [WSGI])
 
@@ -14,6 +25,14 @@ it to the client.
 
 Requests for stuff that requires python code interpretation gets passed via a dynamic port to our WSGI. The WSGI 
 processes the requested material and forwards it back to Nginx. Nginx then presents it to the client.
+
+## Webpack SASS workflow
+sass-loader compile scss to css
+postcss-loader would parse css and add vendor prefixes to CSS rules.
+css-loader interprets @import and url() in css.
+MiniCssExtractPlugin.loader extract css code to app.css
+
+
 
 
 # Database Connection
@@ -34,6 +53,18 @@ DATABASES = {
 ```
 TIME_ZONE = 'EST'
 
+# STATICFILES_STORAGE
+ManifestStaticFilesStorage applies an MD5 hash to files stored in the backend. 
+The purpose of this is to keep serving old files in case some pages still refer. IE Being cached by the browser or some third party app.
+
+Speeds up load time for subsequent page visits.
+
+Storage backend automatically replaces the paths found in the saved files matching other saved files with the 
+path of the cached copy.
+
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
+
 # superuser
 If a superuser is needed run the command
 python manage.py createsuperuser fill in the request information
@@ -43,6 +74,11 @@ You can now login to the admin panel.
 # static files 
 In settings.py starlamp's default directory is set to the project root. This can be changed, or even appended.
 
+# Webpack Configuration
+Webpack is a static module bundler, it internally builds a 
+dependency graph from one or more entry points and then combines 
+every module the project needs into one or more bundles, which are static
+assets to serve content from.
 
 ### gallery (app)
 Handles the images output to the website
