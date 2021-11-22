@@ -12,13 +12,16 @@
         {% block css %}
             {{ block.super }}
         {% endblock %}
+        {% block js %}
+            {{ block.super }}
+        {% endblock %}
         <title>Starlamp</title>
     </head>
     <body>
-    {% block content %}{% endblock %}
+    {% block content %}
+    <canvas id="bg">
 
-    {% block js %}
-        {{ block.super }}
+    </canvas>
     {% endblock %}
     </body>
     </html>
