@@ -14,7 +14,7 @@ module.exports = [
         output: {
             path: path.resolve(__dirname, "galleries/static"),
             publicPath: "/static/",
-            filename: "[name].js",
+            filename: "js/[name].js",
             chunkFilename: "[id]-[chunkhash].js",
         },
         devServer: {
@@ -37,23 +37,24 @@ module.exports = [
                     loader: "file-loader",
                 },
                 {
-                    test: /\.css$/,
+                    test: /\.s?css$/i,
                     exclude: exclusions,
-                    use: [
-                        MiniCssExtractPlugin.loader,
-                        {loader: "css-loader"},
-                    ],
+                    use: ['style-loader', 'css-loader', 'sass-loader'],
                 },
                 {
                     test: /\.js$/,
                     include: path.resolve(__dirname, '/assets'),
                     loader: "babel-loader"
+                },
+                {
+                    test: /three\/examples\/js/,
+                    use: 'imports-loader?THREE=three'
                 }
             ],
         },
         plugins: [
             new CleanWebpackPlugin({dangerouslyAllowCleanPatternsOutsideProject: true, dry: false}),
-            new MiniCssExtractPlugin(),
+            new MiniCssExtractPlugin({filename: 'css/app.css'}),
             new HTMLWebpackPlugin({
                 template: path.resolve(__dirname, './assets/index.ejs'),
                 filename: path.resolve(__dirname, './galleries/templates/galleries/base.html'),

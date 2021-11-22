@@ -1,3 +1,3 @@
-import "./styles/styles.css";
-import * as THREE from 'three';
+import "./styles/main.scss";
+import "./js/lamp3d.js"
 
