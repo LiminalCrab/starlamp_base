@@ -39,7 +39,7 @@ module.exports = [
                 {
                     test: /\.s?css$/i,
                     exclude: exclusions,
-                    use: [MiniCssExtractPlugin.loader, 'css-loader?sourceMap=true', 'postcss-loader', 'sass-loader'],
+                    use: ['style-loader', 'css-loader', 'sass-loader'],
                 },
                 {
                     test: /\.js$/,
