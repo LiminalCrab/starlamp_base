@@ -26,11 +26,13 @@ it to the client.
 Requests for stuff that requires python code interpretation gets passed via a dynamic port to our WSGI. The WSGI 
 processes the requested material and forwards it back to Nginx. Nginx then presents it to the client.
 
-Webpack SASS workflow
+## Webpack SASS workflow
 sass-loader compile scss to css
 postcss-loader would parse css and add vendor prefixes to CSS rules.
 css-loader interprets @import and url() in css.
 MiniCssExtractPlugin.loader extract css code to app.css
+
+
 
 
 # Database Connection

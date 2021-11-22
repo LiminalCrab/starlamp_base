@@ -54,7 +54,7 @@ module.exports = [
         },
         plugins: [
             new CleanWebpackPlugin({dangerouslyAllowCleanPatternsOutsideProject: true, dry: false}),
-            new MiniCssExtractPlugin(),
+            new MiniCssExtractPlugin({filename: 'css/app.css'}),
             new HTMLWebpackPlugin({
                 template: path.resolve(__dirname, './assets/index.ejs'),
                 filename: path.resolve(__dirname, './galleries/templates/galleries/base.html'),
