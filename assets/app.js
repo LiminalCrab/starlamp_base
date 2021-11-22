@@ -1,3 +1,3 @@
-import "./styles/styles.css";
+import "./styles/main.scss";
 import "./js/lamp3d.js"
 
